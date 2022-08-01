@@ -13,6 +13,8 @@ body.appendChild(button)
 function createGrid(){
 let gridContainer= document.createElement('div');
 gridContainer.classList.add('grid-container')
+gridContainer.style.setProperty('grid-template-columns', 'repeat(' + GRID_HEIGHT+ ', 1fr)')
+gridContainer.style.setProperty('grid-template-rows', 'repeat(' + GRID_WIDTH+ ', 1fr)')
 
 
 //create tile
