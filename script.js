@@ -12,7 +12,7 @@ function createTile(){
 
     let tile=document.createElement('div')
     tile.classList.add('tile')
-    
+    tile.addEventListener('mouseover',()=>tile.classList.add('hovered'))
     return tile;
 }
 
